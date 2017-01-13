@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="translateApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--Bootstrap Link -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Angular Script -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+    <!-- ngRoute Script -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+    <!-- app.js and customs scripts -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="scripts/controllers/AlbumsIndexController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/LyricsController.js"></script>
+
+    <title>Translate Songs</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>LYRIC TRANSLATOR</h1>
+        <p>Translate your music into any language!</p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- <div class="row">
+        <form action="/search" method="get" class="searchBar"
+        click-outside="unfocus()" ng-click="focus()">
+        <input autocomplete="off" ng-click="focus()" ng-model="search_text" ng-disabled="submitting"
+        name="q" type="text" class="quick_search autocomplete" placeholder="Search songs">
+      </div>
+    </br> -->
+      <div class="row">
+        <!-- Text input -->
+        <div class="form-group">
+          <label class="col-md-4 control-label">Song Name</label>
+          {{4+4}}
+          <div class="col-md-4">
+            <input ng-model="albumsIndexCtrl.song.albumName" type="text" class="form-control input-md" required="">
+          </div>
+        </div>
+      </div>
+    </br>
+      <!-- <div class="row"> -->
+        <!-- Text input-->
+        <!-- <div class="form-group">
+          <label class="col-md-4 control-label">Artist Name</label>
+          <div class="col-md-4">
+            <input ng-model="" type="text" class="form-control input-md">
+          </div>
+        </div>
+      </div>
+    </br>
+      <div class="row"> -->
+        <!-- Text input -->
+        <!-- <div class="form-group">
+          <label class="col-md-4 control-label">Album Name</label>
+          <div class="col-md-4">
+            <input ng-model="" type="text" class="form-control input-md">
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div ng-view></div>
+
+  </body>
+</html>
