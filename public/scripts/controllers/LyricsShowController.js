@@ -6,12 +6,9 @@ LyricsShowController.$inject = ['$http'];
 
 function LyricsShowController($http) {
   var vm = this;
-  vm.newSong = {};
+  vm.newLyrics = {};
 
-  vm.song = {
-    albumName: "2001",
-    artistName: "dr. dre"
-  }
+
   // $http({
   //   method: 'GET',
   //   url: '/api.genius.com/songs'
