@@ -7,15 +7,15 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/templates/something',
+      templateUrl: '/templates/songs',
       controllerAs: 'songIndexCtrl',
       controller: 'SongIndexController'
     })
-    // .when('/albums/:id', {
-    //   templateUrl: '/templates/albums-show',
-    //   controllerAs: 'albumsShowCtrl',
-    //   controller: 'AlbumsShowController'
-    // })
+    .when('/lyrics', {
+      templateUrl: '/templates/lyrics',
+      controllerAs: 'lyricsShowCtrl',
+      controller: 'LyricsShowController'
+    })
 
     $locationProvider.html5Mode({
       enabled: true,

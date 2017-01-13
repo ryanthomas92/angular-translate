@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // need to add this so that we can accept request payloads
 app.use(bodyParser.json());
 
-var controllers = require('./controllers');
 
 app.get('/', function homepage (req, res) {
   res.sendFile(__dirname + '/views/index.html');
