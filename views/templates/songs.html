@@ -20,7 +20,7 @@
   </div>
   <input type="text" class="form-control input-md" ng-model="searchText" placeholder="Search Songs">
   <div ng-repeat="song in songIndexCtrl.songs | filter: searchText | orderBy: 'artist'" class="row">
-    <p>{{song.title}}, by {{song.artist}}</p>
+    <p><span><a ng-href="/lyrics">{{song.title}}</a></span>, by {{song.artist}}</p>
   </div>
 </br>
 </div>

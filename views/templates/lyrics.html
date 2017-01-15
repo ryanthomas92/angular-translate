@@ -1,1 +1,8 @@
+<div class="header">
 <h1>Lyrics</h1>
+</div>
+<div class="container">
+  <div ng-repeat="lyric in lyricsShowCtrl.lyrics" class="row">
+    <p>{{lyric.lines}}</p>
+  </div>
+</div>
