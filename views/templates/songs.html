@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container one">
   <!-- <div class="row">
     <form action="/search" method="get" class="searchBar"
     click-outside="unfocus()" ng-click="focus()">
@@ -6,16 +6,33 @@
     name="q" type="text" class="quick_search autocomplete" placeholder="Search songs">
   </div>
 </br> -->
+<div class="container col-xs-6">
   <div class="row">
     <!-- Text input -->
-    <input type="text" class="form-control input-md" ng-model="searchText" placeholder="Search Songs">
+    <input type="text" class="form-control input-lg" ng-model="searchText" placeholder="Search Songs">
   </br>
+</br>
   <!--create col to split up two columns of songs-->
-    <div ng-repeat="song in songIndexCtrl.songs | filter: searchText | orderBy: 'artist'" class="row">
-      <p><span><a ng-href="/lyrics">{{song.title}}</a></span>, by {{song.artist}}</p>
+  <!-- <div class = "row"> -->
+    <div ng-repeat="song in songIndexCtrl.songs | filter: searchText | orderBy: 'artist'" class="col-xs-12">
+      <p class="title"><span><a ng-href="/lyrics">{{song.title}}</a></span>, by {{song.artist}}</p>
     </div>
-  </br>
   </div>
+</div>
+  <div class="container col-xs-6">
+    <div class="row">
+    </br>
+  </br>
+</br>
+</br>
+    <div ng-repeat="song in songIndexCtrl.songsTwo | filter: searchText | orderBy: 'artist'" class="col-xs-12">
+      <p class="title"><span><a ng-href="/lyrics">{{song.title}}</a></span>, by {{song.artist}}</p>
+    </div>
+  </div>
+</div>
+  <!-- </div> -->
+  </br>
+  <!-- </div> -->
 </div>
 
 

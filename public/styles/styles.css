@@ -1,7 +1,39 @@
 p {
   font-family: 'Fjalla One', sans-serif;
 }
+.lyrics {
+  margin-left: 15%;
+  font-size: 25px;
+}
+.color {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
+}
+.translation {
+  font-size: 25px;
+}
 .header {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
+}
+#font_head {
+  font-size: 100px !important;
+}
+#font_p {
+  font-size: 50px !important;
+}
+.jumbotron {
+  background: #673AB7 !important;
+}
+section {
+  background-image: url("https://i.ytimg.com/vi/Fwy4fPoInH4/maxresdefault.jpg");
+}
+.title {
+  font-size: 30px;
+  color: white;
+}
+.o {
+  background-color: #333333;
+  padding-top: 100px;
 }

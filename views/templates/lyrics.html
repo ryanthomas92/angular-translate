@@ -1,28 +1,36 @@
-<div class="row">
-  <div class="col-xs-6">
-    <h1>Lyrics</h1>
-  </div>
-  <div class="col-xs-6">
-  </br>
-    <button class="btn btn-success" ng-click="hidden = !hidden">Translate</button>
-  </div>
-</div>
-
-
-<div class="container col-xs-6">
+<div class="container">
   <div class="row">
-    <div ng-repeat="lyric in lyricsShowCtrl.lyrics" class="col-xs-12">
-      <p>{{lyric.lines}}</p>
+    <div class="col-xs-6">
+      <h2 class="color">Lyrics</h2>
+      <h2 class="color">Heathens</h2>
+      <h2 class="color">by: Twenty One Pilots</h2>
+    </div>
+  </br>
+    <div class="col-xs-6">
+      <h2 class="color">Click to Translate this Song to Spanish</h2>
+    </br>
+      <button class="btn-lg btn-success" ng-click="hidden = !hidden">Translation On/Off</button>
     </div>
   </div>
 </div>
+</br>
+
+<section>
   <div class="container col-xs-6">
     <div class="row">
-      <div ng-repeat="translate in lyricsShowCtrl.translated" class="col-xs-12">
-        <p ng-show="hidden">{{translate.lines}}</p>
+      <div ng-repeat="lyric in lyricsShowCtrl.lyrics" class="col-xs-12">
+        <p class="lyrics">{{lyric.lines}}</p>
       </div>
     </div>
   </div>
+  <div class="container col-xs-6">
+    <div class="row">
+      <div ng-repeat="translate in lyricsShowCtrl.translated" class="col-xs-12">
+        <p class="translation" ng-show="hidden">{{translate.lines}}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

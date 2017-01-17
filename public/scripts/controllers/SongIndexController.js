@@ -49,6 +49,48 @@ function SongIndexController($http) {
       artist:'Twenty One Pilots'
     }
   ];
+  vm.songsTwo = [
+   {
+     title: 'Broccoli',
+     artist:'D.R.A.M'
+   },
+   {
+     title: 'Caroline',
+     artist:'Amine'
+   },
+   {
+     title: 'Bounce Back',
+     artist:'Big Sean'
+   },
+   {
+     title: 'Mercy',
+     artist:'Shawn Mendes'
+   },
+   {
+     title: 'Cant Stop The Feeling',
+     artist:'Justin Timberlake'
+   },
+   {
+     title: 'Love on the Brain',
+     artist:'Rihanna'
+   },
+   {
+     title: 'All Time Low',
+     artist:'Jon Bellion'
+   },
+   {
+     title: 'Treat You Better',
+     artist:'Shawn Mendes'
+   },
+   {
+     title: 'OOOUUU',
+     artist:'Young M.A.'
+   },
+   {
+     title: 'I Feel It Coming',
+     artist:'The Weeknd'
+   }
+ ];
 
   vm.newSong = {};
 
