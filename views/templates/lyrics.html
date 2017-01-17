@@ -1,8 +1,43 @@
-<div class="header">
-<h1>Lyrics</h1>
+<div class="row">
+  <div class="col-xs-6">
+    <h1>Lyrics</h1>
+  </div>
+  <div class="col-xs-6">
+  </br>
+    <button class="btn btn-success" ng-click="hidden = !hidden">Translate</button>
+  </div>
 </div>
-<div class="container">
-  <div ng-repeat="lyric in lyricsShowCtrl.lyrics" class="row">
+
+
+<div class="container col-xs-6">
+  <div class="row">
+    <div ng-repeat="lyric in lyricsShowCtrl.lyrics" class="col-xs-12">
+      <p>{{lyric.lines}}</p>
+    </div>
+  </div>
+</div>
+  <div class="container col-xs-6">
+    <div class="row">
+      <div ng-repeat="translate in lyricsShowCtrl.translated" class="col-xs-12">
+        <p ng-show="hidden">{{translate.lines}}</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-- <div ng-repeat="lyric in lyricsShowCtrl.lyrics" class="row">
+  <div class="col-xs-6">
     <p>{{lyric.lines}}</p>
   </div>
 </div>
+<div ng-repeat="translate in lyricsShowCtrl.translated" class="row">
+  <div class="col-xs-6">
+    <p>{{translate.lines}}</p>
+  </div>
+</div> -->

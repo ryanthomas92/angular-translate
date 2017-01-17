@@ -52,9 +52,9 @@ function SongIndexController($http) {
 
   vm.newSong = {};
 
-  vm.song = {
-    songName: "What I Got"
-  }
+  // vm.song = {
+  //   songName: "What I Got"
+  // }
   // $http({
   //   method: 'GET',
   //   url: 'https://api.genius.com/songs'
