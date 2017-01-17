@@ -26,9 +26,9 @@ p {
 .jumbotron {
   background: #673AB7 !important;
 }
-section {
+/*section {
   background-image: url("https://i.ytimg.com/vi/Fwy4fPoInH4/maxresdefault.jpg");
-}
+}*/
 .title {
   font-size: 30px;
   color: white;
