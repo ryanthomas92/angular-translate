@@ -25,6 +25,7 @@ p {
 }
 .jumbotron {
   background: #673AB7 !important;
+  margin-bottom: -30px !important;
 }
 /*section {
   background-image: url("https://i.ytimg.com/vi/Fwy4fPoInH4/maxresdefault.jpg");
